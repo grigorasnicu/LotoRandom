@@ -1,0 +1,178 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+body {
+	background-image: url("billie_holiday.png");
+}
+
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+#logo-img {
+	height: 40px;
+	vertical-align: middle;
+
+}
+
+.brand-logo {
+	font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+nav .logo_container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.rezultate {
+	box-sizing: border-box;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    border-radius: 1px;
+}
+
+.rezultate:hover {
+	background-color: #e1f5fe;
+
+}
+
+/*REZULTATE*/
+
+/*Rezultate Title*/
+
+.r-title {
+	margin-right: 15px;
+	margin-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	/*border-bottom: 1px solid #0288d1;*/
+
+}
+.rezultate_logo {
+	height: 30px;
+	float:left;
+	margin-right: -5px;
+	margin-top: -5px;
+}
+
+.r-title h2 {
+	font-size: 32px;
+	font-family: 'Oleo Script Swash Caps', cursive;
+	color: #0288d1;
+	margin: 0;
+
+}
+
+
+
+.rez-bile {
+	text-align: center;
+}
+
+.rez-bile li {
+	display: inline;
+}
+
+.rez-bile img {
+	height: 45px;
+}
+
+modal {
+	margin :0;
+}
+
+
+
+@media (max-width:992px ) {
+	.modal {
+		width: 90%;
+	}
+	
+}
+.noroc_container {
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+	margin:0;
+	text-align: right;
+
+}
+
+.noroc_container div {
+	display: inline;
+}
+
+.noroc_title {
+	font-size: 25px;
+	font-family: 'Oleo Script Swash Caps', cursive;
+	color: #f44336;
+}
+
+.noroc_content {
+	font-size: 32px;
+	padding: 5px;
+	color: #f44336;
+	border-radius: 5px;
+	font-family: "Monofett", cursive;
+}
+
+.noroc_logo {
+	height: 25px;
+	margin: 0;
+	padding: 0;
+	margin-right: -5px;
+
+}
+
+.div-rez {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*END REZULTATE*/
+
+.rezultate_main_title {
+	margin-top: 0;
+	margin-bottom: 0;
+	
+	color: #0288d1;
+}
+
+.data_rezultate {
+	text-align: right;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #0288d1;
+}
+
+.main_title_rezultate {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+
+/*SIDE-NAV*/
+.side-nav {
+	background-image: url("billie_holiday.png");
+}
+
+.side-nav li a {
+	text-align: center;
+}
+
+.side-nav li a:hover {
+	background-color: #e1f5fe;
+}
+
+/*END of SIDE-NAV*/
