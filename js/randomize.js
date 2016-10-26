@@ -11,18 +11,18 @@ $(document).ready(function(){
                  case '1':
                     
                     $("#var_1").empty().append(randomb("#var_1"));
-                     $("#var_1").append("<hr>");
+                     $("#var_1").append("");
                   
                   break;
                   
                   case '2' :  
                     $("#var_2").empty().append(randomb("#var_1")+randomb("#var_2"));
-                    $("#var_2").append("<hr>");
+                    $("#var_2").append("");
                     break;
                   
                   case '3' :
                     $("#var_3").empty().append(randomb("#var_1")+randomb("#var_2")+randomb("#var_3"));
-                    $("#var_3").append("<hr>");
+                    $("#var_3").append("");
                     break;
              }
              
