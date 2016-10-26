@@ -6,7 +6,7 @@
  * Made By MaterializeCSS.com
  */
 body {
-	background-image: url("billie_holiday.png");
+	background-image: url("kindajean.png");
 }
 
 
@@ -87,16 +87,14 @@ nav .logo_container {
 	height: 45px;
 }
 
-modal {
-	margin :0;
-}
 
 
 
-@media (max-width:992px ) {
+
+@media (max-width: 992px) {
 	.modal {
 		width: 90%;
-	}
+	},
 	
 }
 .noroc_container {
@@ -188,11 +186,9 @@ modal {
 	font-size: 24px;
 }
 
-@media (max-width:992px ) {
-	.loto649_btn {
-		font-size: 24px;
+.var_content li img {
+	width: 50px;
 	}
-}
 
 .random_form p {
 	display: inline;
@@ -203,7 +199,27 @@ modal {
 	display: inline;
 } 
 
-.var_content li img {
-	width: 15%;
+
+.var_rand {
+	margin-bottom: 0;
+}
+div.modal-content.modal_variante_649 {
+	padding: 0;
+}
+
+.container_title649 h1 {
+	font-family: 'Oleo Script Swash Caps', cursive;
+	color: white;
+	margin:0;
+}
+
+ul.container_title649 li {
+	display: inline;	
+}
+
+
+.loto649_title img {
+	width: 70px;
+
 }
 /*End og But Generator*/

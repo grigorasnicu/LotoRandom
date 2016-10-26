@@ -9,19 +9,29 @@ $(document).ready(function(){
              
              switch (variante){
                  case '1':
-                    
+                    $("#var_1").empty();
+                    $("#var_2").empty();
+                    $("#var_3").empty();
                     $("#var_1").empty().append(randomb("#var_1"));
                      $("#var_1").append("");
-                  
+
+
+
                   break;
                   
                   case '2' :  
-                    $("#var_2").empty().append(randomb("#var_1")+randomb("#var_2"));
+                    $("#var_1").empty();
+                    $("#var_2").empty();
+                    $("#var_3").empty();
+                    $("#var_2").append(randomb("#var_1")+randomb("#var_2"));
                     $("#var_2").append("");
                     break;
                   
                   case '3' :
-                    $("#var_3").empty().append(randomb("#var_1")+randomb("#var_2")+randomb("#var_3"));
+                    $("#var_1").empty();
+                    $("#var_2").empty();
+                    $("#var_3").empty();
+                    $("#var_3").append(randomb("#var_1")+randomb("#var_2")+randomb("#var_3"));
                     $("#var_3").append("");
                     break;
              }
@@ -49,7 +59,7 @@ var randomb = function (rand){
             
           var x = randomcheck[i];  
        
-          $(rand).append('<li><img class="responsive-img" src="images/bile/'+x+'b.png"/></li>');
+          $(rand).append('<li><img class="" src="images/bile/'+x+'b.png"/></li>');
          
         }
         
