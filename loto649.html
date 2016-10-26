@@ -60,13 +60,14 @@
     <div class="row">
     
         <div class="col l12 center">
-        <a class="modal-trigger waves-effect waves-light btn btn-large loto649_btn" href="#modal1">Numai 6 is norocoase</a>
+        <a class="modal-trigger waves-effect waves-light btn btn-large" id="loto649_btn" href="#modal1">Numai 6 is norocoase</a>
         </div>
 
      </div>
 
     <div class="row">
     <div class="col l12 center">
+
     <form action="#" class="random_form center">
         <p>
           <input name="variante" type="radio" id="test1" value="1"  checked />
@@ -92,12 +93,31 @@
   <div id="modal1" class="modal modal-fixed-footer">
     <div class="modal-content">
       <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      
+
+      <div class="row">
+      <div class="col l12 m12 s12 center">
+        <ul id="var_1" class="var_content"</ul>
+      </div>
     </div>
 
-    <div class="random_num num_1"></div>
-    <div class="random_num num_2"></div>
-    <div class="random_num num_3"></div>
+    <div class="row center">
+      <div class="col l12 m12 s12">
+        <ul id="var_2" class="var_content"></ul>
+      </div>
+    </div>
+
+    <div class="row center">
+      <div class="col l12 m12 s12">
+        <ul id="var_3" class="var_content"></ul>
+      </div>
+
+    </div>
+    </div>
+
+    
+
+
 
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
@@ -154,6 +174,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/randomize.js"></script>
 
 
 

@@ -3,63 +3,35 @@ $(document).ready(function(){
     
  
     
-     $('.loto649_btn').on('click', function () {
+     $('#loto649_btn').on('click', function () {
          
              var variante = $("input:radio[name=variante]:checked").val();
              
              switch (variante){
                  case '1':
                     
-                    $("num_1").empty().append(randomb("num_1"));
-                     $("num_1").append("<hr>");
+                    $("#var_1").empty().append(randomb("#var_1"));
+                     $("#var_1").append("<hr>");
                   
                   break;
                   
                   case '2' :  
-                    $("#num6r2").empty().append(randomb("num_1")+randomb("#num6r2"));
-                    $("#num6r2").append("<hr>");
+                    $("#var_2").empty().append(randomb("#var_1")+randomb("#var_2"));
+                    $("#var_2").append("<hr>");
                     break;
                   
                   case '3' :
-                    $("#num6r3").empty().append(randomb("num_1")+randomb("#num6r2")+randomb("#num6r3"));
-                    $("#num6r3").append("<hr>");
+                    $("#var_3").empty().append(randomb("#var_1")+randomb("#var_2")+randomb("#var_3"));
+                    $("#var_3").append("<hr>");
                     break;
              }
              
-            $('#genbutton6').hide();
-            $('#var6').hide();
-            
-            $('#genereaza6').append('<a href="loto649.html" id="goback6"></button>');
-            $('#genereaza6').append('<button id="regenbutton6" ></button>');
-            
-             
-            $("#regenbutton6").addClass("btn glyphicon glyphicon-refresh ");
-             $("#goback6").addClass("glyphicon glyphicon-arrow-left ");
+           
           
          
           
   
-        $('#regenbutton6').on('click', function (){
-           
-           switch (variante){
-                 case '1':
-                    $("num_1").empty().append(randomb("num_1"));
-                  
-            
-                  break;
-                  
-                  case '2' :  
-                    $("#num6r2, num_1").empty().append(randomb("num_1")+randomb("#num6r2"));
-                     
-                    break;
-                  
-                  case '3' :
-                    $("#num6r3, num_1, #num6r2").empty().append(randomb("num_1")+randomb("#num6r2")+randomb("#num6r3"));
-                      $("#num6r3").append("<hr>");
-                    break;
-             }
-           
-       }) ;
+        
   });
 });
 
@@ -77,7 +49,7 @@ var randomb = function (rand){
             
           var x = randomcheck[i];  
        
-          $(rand).append('<li><img class="" src="bile/'+x+'.png"/></li>');
+          $(rand).append('<li><img class="responsive-img" src="images/bile/'+x+'b.png"/></li>');
          
         }
         
