@@ -88,15 +88,6 @@ nav .logo_container {
 }
 
 
-
-
-
-@media (max-width: 992px) {
-	.modal {
-		width: 90%;
-	},
-	
-}
 .noroc_container {
 	padding-top: 10px;
 	padding-bottom: 15px;
@@ -175,11 +166,13 @@ nav .logo_container {
 
 /*END of SIDE-NAV*/
 
+.modal {
+	width: 95%;
+}
+
+/*----------------LOTO PAGE GENERATOR -----------------*/
 
 
-/*----------------LOTO 649 -----------------*/
-
-/*Button Generator*/
 
 #loto649_btn {
 	
@@ -207,19 +200,51 @@ div.modal-content.modal_variante_649 {
 	padding: 0;
 }
 
-.container_title649 h1 {
+div.title_pag_gen {
 	font-family: 'Oleo Script Swash Caps', cursive;
 	color: white;
 	margin:0;
+	font-size: 50px;
 }
-
-ul.container_title649 li {
+.container_title_pag div {
 	display: inline;	
 }
 
 
-.loto649_title img {
+.logo_pag_gen img {
 	width: 70px;
+	position: relative;
+	top: 20px;
 
 }
-/*End og But Generator*/
+
+.modal_variante_649 h4 {
+	font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+/* Modal */
+
+.title_modal_pg {
+
+}
+.logo_modal_pg {
+	height: 40px;
+}
+
+/*End Modal*/
+
+/*END PAGE GENERATOR*/
+
+
+/* >>>>>>>>>>> FOOTER <<<<<<<<<<<<*/
+
+.footer-copyright {
+	font-family:'Poiret One', cursive;
+	color: #fff;
+	font-size: 20px;
+}
+
+.footer-copyright a {
+	color: #fff;
+}
+/* >>>>>>>>>>> END FOOTER <<<<<<<<<<<<*/

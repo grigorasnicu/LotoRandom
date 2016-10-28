@@ -18,12 +18,14 @@
 
   <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Monofett" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 
 </head>
 
 
 <body>
-
+    
+  <!-- >>>>>>>>>>>>>>>> NAVBAR <<<<<<<<<<<<<<<<<<< -->
 
   <div class="navbar-fixed">
     <nav class="light-blue darken-2" role="navigation">
@@ -49,100 +51,83 @@
     </nav>
     </div>
 
-    <div class="row">
+    <!-- >>>>>>>>>>>>>>>>>>>> END NAVBAR <<<<<<<<<<<<<<-->
+
+    <!-- >>>>>>>>>>>>>>>>> MAIN SECTION <<<<<<<<<<<<<<<< -->
+
+    <section class="main_section">
+
+      <div class="row"> <!-- Page Title -->
+          <div class="col l12 m12 s12 center container_title_pag">
+              <div class="logo_pag_gen"><img src="images/clover.svg"></div>
+              <div class="title_pag_gen">6/49</div>
+          </div>
+       </div>
+
+      <div class="row"> <!-- Button -->
+          <div class="col l12 center">
+            <a class="modal-trigger waves-effect waves-light btn btn-large" id="loto649_btn" href="#modal1">Numai 6 îs norocoase</a>
+          </div>
+       </div>
+
+      <div class="row"> <!--Radio Buttons-->
+        <div class="col l12 m12 s12 center">
+            <form action="#" class="random_form center">
+                <p>
+                  <input name="variante" type="radio" id="test1" value="1"  checked />
+                  <label for="test1">1 variantă</label>
+                </p>
+                <p>
+                  <input name="variante" type="radio" id="test2" value="2" />
+                  <label for="test2">2 variante</label>
+                </p>
+                <p>
+                  <input name="variante" type="radio" id="test3" value="3"  />
+                  <label for="test3">3 variante</label>
+                </p>
+             </form>
+         </div>
+       </div>
 
     
-        <div class="col l12 m12 s12 center loto649_title">
-            <ul class="container_title649">
-            <li><img src="images/clover.svg"></li>
-            <li><h1>6/49</h1></li>
-           </ul>
-        
-        </div>
+      <div id="modal1" class="modal modal-fixed-footer"><!-- Modal-->
 
-     </div>
+        <div class="modal-content modal_variante_649">
 
-    <div class="row">
-    
-        <div class="col l12 center">
-
-        <a class="modal-trigger waves-effect waves-light btn btn-large" id="loto649_btn" href="#modal1">Numai 6 îs norocoase</a>
-        </div>
-
-     </div>
-
-    <div class="row">
-    <div class="col l12 m12 s12 center">
-
-    <form action="#" class="random_form center">
-        <p>
-          <input name="variante" type="radio" id="test1" value="1"  checked />
-          <label for="test1">1 variantă</label>
-        </p>
-        <p>
-          <input name="variante" type="radio" id="test2" value="2" />
-          <label for="test2">2 variante</label>
-        </p>
-        <p>
-          <input name="variante" type="radio" id="test3" value="3"  />
-          <label for="test3">3 variante</label>
-        </p>
+          <img class="logo_modal_pg" src="images/clover-blue.svg">
+          <h4 class="title_modal_pg">Loto 6/49</h4>
           
-     </form>
-     </div>
-     </div>
+          <div class="row var_rand">
+            <div class="col l12 m12 s12 center">
+              <ul id="var_1" class="var_content"></ul>
+            </div>
+          </div>
 
-   
+          <div class="row center var_rand">
+            <div class="col l12 m12 s12">
+              <ul id="var_2" class="var_content"></ul>
+            </div>
+          </div>
 
-    
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal modal-fixed-footer">
+          <div class="row center var_rand">
+            <div class="col l12 m12 s12">
+              <ul id="var_3" class="var_content"></ul>
+             </div>
+          </div>
 
-    <div class="modal-content modal_variante_649">
-      <h4>Loto 6/49</h4>
-      
-      
-      <div class="row var_rand">
+        </div>
+        
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Gata</a>
+        </div>
 
-      <div class="col l12 m12 s12 center">
-        <ul id="var_1" class="var_content"></ul>
-      </div>
-    </div>
-
-    <div class="row center var_rand">
-      <div class="col l12 m12 s12">
-        <ul id="var_2" class="var_content"></ul>
-      </div>
-    </div>
-
-    <div class="row center var_rand">
-      <div class="col l12 m12 s12">
-        <ul id="var_3" class="var_content"></ul>
-      </div>
+      </div> <!--End Modal-->
 
     </div>
-    </div>
-    
 
+  </section>
 
-
-    
-
-
-
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
-    </div>
-  </div>
-  
-  
-    
-    <br><br>
-
-    <div class="section">
-
-    </div>
-  </div>
+  <!--<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>-->
 
   <footer class="page-footer light-blue darken-2">
     <div class="container">
@@ -175,13 +160,15 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="#">Kode.Creative</a>
+      Made by <a class="" href="#">kode.creative</a>
       </div>
     </div>
   </footer>
 
+  <!-- >>>>>>>>>>>>>>>>>>>>>> END FOOTER <<<<<<<<<<< -->
 
-  <!--  Scripts-->
+
+  <!--  Scripts -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
