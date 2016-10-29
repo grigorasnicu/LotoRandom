@@ -170,7 +170,7 @@ nav .logo_container {
 	width: 95%;
 }
 
-/*----------------LOTO PAGE GENERATOR -----------------*/
+/*----------------LOTO PAGE GENERATOR CONTENT -----------------*/
 
 
 
@@ -216,15 +216,28 @@ div.title_pag_gen {
 	position: relative;
 	top: 20px;
 
+
 }
 
-.modal_variante_649 h4 {
+.title_modal_pg {
 	font-family: 'Oleo Script Swash Caps', cursive;
+
+	vertical-align: top;
+}
+
+#title_modal_pg469 {
+	color: #0288d1;
 }
 
 /* Modal */
 
+.modal_top {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
 .title_modal_pg {
+	display: inline;
 
 }
 .logo_modal_pg {
@@ -233,7 +246,7 @@ div.title_pag_gen {
 
 /*End Modal*/
 
-/*END PAGE GENERATOR*/
+/*END PAGE GENERATOR CONTENT*/
 
 
 /* >>>>>>>>>>> FOOTER <<<<<<<<<<<<*/

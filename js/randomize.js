@@ -12,10 +12,9 @@ $(document).ready(function(){
                     $("#var_1").empty();
                     $("#var_2").empty();
                     $("#var_3").empty();
-                    $("#var_1").empty().append(randomb("#var_1"));
-                     $("#var_1").append("");
-
-
+                    $("#div_1").show();
+                    $("#var_1").append(randomb("#var_1"));
+                    
 
                   break;
                   
