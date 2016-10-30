@@ -1,9 +1,15 @@
 
 $(document).ready(function(){
+
+    $("#div_m2").hide();
+    $("#div_m3").hide();
     
  
     
      $('#loto649_btn').on('click', function () {
+
+            $("#div_m2").hide();
+    $("#div_m3").hide();
          
              var variante = $("input:radio[name=variante]:checked").val();
              
@@ -12,7 +18,7 @@ $(document).ready(function(){
                     $("#var_1").empty();
                     $("#var_2").empty();
                     $("#var_3").empty();
-                    $("#div_1").show();
+                    $("#div_m1").show();
                     $("#var_1").append(randomb("#var_1"));
                     
 
@@ -22,16 +28,17 @@ $(document).ready(function(){
                     $("#var_1").empty();
                     $("#var_2").empty();
                     $("#var_3").empty();
+                    $("#div_m2").show();
                     $("#var_2").append(randomb("#var_1")+randomb("#var_2"));
-                    $("#var_2").append("");
                     break;
                   
                   case '3' :
                     $("#var_1").empty();
                     $("#var_2").empty();
                     $("#var_3").empty();
+                    $("#div_m2").show();
+                    $("#div_m3").show();
                     $("#var_3").append(randomb("#var_1")+randomb("#var_2")+randomb("#var_3"));
-                    $("#var_3").append("");
                     break;
              }
              

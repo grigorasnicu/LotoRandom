@@ -231,6 +231,8 @@ div.title_pag_gen {
 
 /* Modal */
 
+
+
 .modal_top {
 	margin-top: 10px;
 	margin-left: 10px;
@@ -242,6 +244,25 @@ div.title_pag_gen {
 }
 .logo_modal_pg {
 	height: 40px;
+}
+
+.var_content {
+	margin-top: 0;
+}
+
+.div_modal {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div.div_modal p {
+	margin: 0;
+	position: relative;
+	top: -10px;
+}
+
+div.div_modal div.divider {
+	width: 78%;
 }
 
 /*End Modal*/
