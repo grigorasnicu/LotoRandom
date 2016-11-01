@@ -1,0 +1,16 @@
+
+  .main_container {
+    max-width: 992px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 0;
+   }
+
+   .nav {
+   	position: fixed;
+   	width: 90%
+   }
+
+   .modal {
+   	width: 40%;
+   }

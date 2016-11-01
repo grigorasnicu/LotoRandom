@@ -1,14 +1,32 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+/* >>>>>>> LEGENDA <<<<<<<<<
+
+font-family:'Oleo Script Swash Caps', cursive;
+
+Color blue > #0288d1
+Color red > #f44336
+
+*/
+
+ /* BODY*/
 body {
 	background-image: url("kindajean.png");
 }
+/*End BODY*/
 
+/* NavBar */
+
+@media (max-height: 991px){
+.navbar {
+	position: relative;
+	height: 60px;
+	z-index: 998;
+}
+
+.navbar nav {
+	position: fixed;
+}
+
+}
 
 .icon-block {
   padding: 0 15px;
@@ -32,6 +50,60 @@ nav .logo_container {
 	margin-right: auto;
 }
 
+/* End Navbar */
+
+/* Side-Nav */
+.side-nav {
+	background-image: url("billie_holiday.png");
+	opacity: 0.9;
+}
+.side-nav p {
+	font-size: 40px;
+	text-align: center;
+}
+.side-nav li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.side-nav li a {
+	text-align: center;
+	font-size: 30px;
+	color: #0288d1;
+	font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+
+
+.side-nav li a:hover {
+	background-color: #e1f5fe;
+}
+
+ul.side-nav li:first-child {
+	margin-top: 90px;
+}
+
+.side-nav img {
+	display: block;
+	width: 25%;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.selected_side_nav {
+	background-color: #0288d1;
+	opacity:  0.7;
+	
+}
+
+li.selected_side_nav a {
+	color: white;
+}
+
+/*End Side-Nav*/
+
+/*  >>>>>>>>>>>>>>>> Rezultate Section <<<<<<<<<<<<<<< */
 
 .rezultate {
 	box-sizing: border-box;
@@ -46,7 +118,6 @@ nav .logo_container {
 
 }
 
-/*REZULTATE*/
 
 /*Rezultate Title*/
 
@@ -68,12 +139,10 @@ nav .logo_container {
 .r-title h2 {
 	font-size: 32px;
 	font-family: 'Oleo Script Swash Caps', cursive;
-	color: #0288d1;
+	color: #0288d1; /*blue color*/
 	margin: 0;
 
 }
-
-
 
 .rez-bile {
 	text-align: center;
@@ -102,7 +171,7 @@ nav .logo_container {
 }
 
 .noroc_title {
-	font-size: 25px;
+	font-size: 20px;
 	font-family: 'Oleo Script Swash Caps', cursive;
 	color: #f44336;
 }
@@ -129,7 +198,7 @@ nav .logo_container {
 	margin-right: auto;
 }
 
-/*END REZULTATE*/
+
 
 .rezultate_main_title {
 	margin-top: 0;
@@ -149,26 +218,103 @@ nav .logo_container {
 	margin-right: 10px;
 	margin-left: 10px;
 }
-
-
-/*SIDE-NAV*/
-.side-nav {
-	background-image: url("billie_holiday.png");
-}
-
-.side-nav li a {
-	text-align: center;
-}
-
-.side-nav li a:hover {
-	background-color: #e1f5fe;
-}
-
-/*END of SIDE-NAV*/
+/* MODAL*/
 
 .modal {
-	width: 95%;
+	width: 98%;
 }
+
+div#modal649_r {
+	max-height: 90%;
+}
+ul.rez-bile {
+	margin-bottom: 7px;
+}
+
+div.modal-content.modal-content-r {
+	padding: 0;
+	margin: 0;
+}
+
+div.modal_top_r {
+	
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:10px;
+
+}
+
+div.modal_top_r img {
+	height: 34px;
+	width: 34px;
+}
+
+div.modal_top_r h4 {
+	font-family: 'Oleo Script Swash Caps', cursive;
+	display: inline;
+	color: #0288d1;
+	vertical-align: top;
+}
+
+.div-modal-r {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.noroc_container_modal {
+	border: 1px solid #f44336;
+	border-radius: 3px;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	
+}
+
+div.noroc_content {
+	padding: 0;
+
+}
+
+div.noroc_container_modal img {
+	width: 30px;
+	height: 30px;
+	
+}
+
+div.noroc_container_modal p {
+	font-size: 18px;
+	margin:0;
+	padding: 0;
+	font-family: 'Oleo Script Swash Caps', cursive;
+	color: #f44336;
+	display: inline;
+
+	position: relative;
+	bottom: 5px;
+
+}
+
+div.noroc_container_modal > div.noroc_content {
+	display: inline;
+}
+
+div.castiguri {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+div.castiguri table thead tr th {
+	
+}
+
+
+/*End MODAL*/
+/* >>>>>>>>> End Rezultate Section <<<<<<<<<<<<< */
+
+
 
 /*----------------LOTO PAGE GENERATOR CONTENT -----------------*/
 
@@ -250,6 +396,18 @@ div.title_pag_gen {
 	margin-top: 0;
 }
 
+.var_content li {
+	margin-right: 5px;
+}
+
+ul.var_content li:last-child {
+	margin-right: 0;
+}
+
+div.row.var_rand > div {
+	padding: 0;
+}
+
 .div_modal {
 	margin-left: 10px;
 	margin-right: 10px;
@@ -259,6 +417,7 @@ div.div_modal p {
 	margin: 0;
 	position: relative;
 	top: -10px;
+	color: #bdbdbd;
 }
 
 div.div_modal div.divider {
@@ -281,4 +440,4 @@ div.div_modal div.divider {
 .footer-copyright a {
 	color: #fff;
 }
-/* >>>>>>>>>>> END FOOTER <<<<<<<<<<<<*/
+/* >>>>>>>>>>> END FOOTER <<<<<<<<<<<<

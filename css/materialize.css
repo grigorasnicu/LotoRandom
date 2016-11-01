@@ -4250,7 +4250,7 @@ nav .input-field label.active {
     line-height: 64px;
   }
   .navbar-fixed {
-    height: 64px;
+    height: .sidepx;
   }
 }
 
@@ -5291,7 +5291,7 @@ button.btn-floating {
   width: 55%;
   margin: auto;
   overflow-y: auto;
-  border-radius: 2px;
+  border-radius: 3px;
   will-change: top, opacity;
 }
 

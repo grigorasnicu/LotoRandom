@@ -13,6 +13,10 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+
+  <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/breakpoints.css">
+
 
   <!--FONTS-->
 
@@ -25,239 +29,392 @@
 
 <body>
 
-
-  <div class="navbar-fixed">
-    <nav class="light-blue darken-2" role="navigation">
-      <div class="nav-wrapper container">
-        
-        <a id="logo-container" href="#" class="brand-logo"><img id="logo-img" src="images/clover.svg">Loto Random</a>
-
-        <ul class="right hide-on-med-and-down">
-          <li><a href="index.html">Acasă</a></li>
-          <li><a href="loto649.html">Loto 6/49</a></li>
-          <li><a href="#">Loto 5/40</a></li>
-          <li><a href="#">Joker</a></li>
-        </ul>
-    
-        <ul id="nav-mobile" class="side-nav">
-          <li><a href="index.html">Acasă</a></li>
-          <li><a href="loto649.html">Loto 6/49</a></li>
-          <li><a href="#">Loto 5/40</a></li>
-          <li><a href="#">Joker</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-    </nav>
-    </div>
+  <div class="main_container"> <!--Whole Container-->
   
-  
+    <div class="navbar"> <!--Navbar-->
+      <nav class="light-blue darken-2" role="navigation">
+        <div class="nav-wrapper container">
+          
+          <a id="logo-container" href="#" class="brand-logo"><img id="logo-img" src="images/clover.svg">Loto Random</a>
 
-
-  
-    <div class="section">
-
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="loto649.html">Loto 6/49</a></li>
+            <li><a href="#">Loto 5/40</a></li>
+            <li><a href="#">Joker</a></li>
+          </ul>
       
-      <div class="row "><!--REZULTTATE SECTION-->
+          <ul id="nav-mobile" class="side-nav">
+            <img id="" class="center" src="images/clover.svg">
+            <li class="z-depth-1 selected_side_nav" ><a href="index.html">Acasa</a></li>
+            <li class="z-depth-1"><a href="loto649.html">Loto 6/49</a></li>
+            <li class="z-depth-1"><a href="#">Loto 5/40</a></li>
+            <li class="z-depth-1"><a href="#">Joker</a></li>
+          </ul>
 
-      <div class="main_title_rezultate">
-        <p class="rezultate_main_title">Rezultate Loto</p>
-        <div class="divider div_title center white"></div>
-        <p class="data_rezultate">13/10/1016</p>
-      </div>
-
-
-        <div class="col s12 l4 m6"> <!-- Rezultate Loto 6/49-->
-
-           <a class="modal-trigger " href="#modal1"> 
-            <div class="rezultate rezultate-649 ">
-
-              <div class="r-title"> <!--Title Rezultate-->
-                <img class="rezultate_logo" svg" src="images/clover-blue.svg">
-                <h2>Loto 6/49</h2>
-              </div>
-
-              <div class="divider div-rez center"></div>
-
-              <ul class="rez-bile"> <!--Numere Rezultate-->
-                <li><img src="images/bile/3b.png"></li>
-                <li><img src="images/bile/3b.png"></li>
-                <li><img src="images/bile/12b.png"></li>
-                <li><img src="images/bile/9b.png"></li>
-                <li><img src="images/bile/1b.png"></li>
-                <li><img src="images/bile/44b.png"></li>
-              </ul>
-
-              <div class="divider div-rez center"></div>
-
-              
-                <div class="noroc_container">
-                <img class="noroc_logo" src="images/clover-red.svg">
-                  <div class="noroc_title">Noroc</div>
-                  <div class="noroc_content">4s56788</div>
-                </div>
-              
-
-            </div>
-          </a> <!--End Rezultates Loto 6/49-->
-
-          <div id="modal1" class="modal"> <!--MODAL Loto 6/49-->
-            <div class="modal-content ">
-              <h4>Loto 6/49</h4>
-              <p>3 5 12 34 23 2 6</p>
-            </div>
-            <hr>
-            <div class="modal-footer">
-              <a href="#!" class=" modal-action modal-close waves-effect light-blue darken-2 btn-flat">Gata</a>
-            </div>
-          </div>
-
-        </div> <!--End Modal Loto 6/49-->
-
-        <div class="col s12 l4 m6"> <!-- Rezultate Loto 5/40-->
-
-           <a class="modal-trigger " href="#modal1"> 
-            <div class="rezultate rezultate-649 ">
-
-              <div class="r-title"> <!--Title Rezultate-->
-                <img class="rezultate_logo" svg" src="images/clover-blue.svg">
-                <h2 style="color: #9c27b0">Loto 5/40</h2>
-              </div>
-
-              <div class="divider div-rez center"></div>
-
-              <ul class="rez-bile"> <!--Numere Rezultate-->
-                <li><img src="images/bile/3b.png"></li>
-                <li><img src="images/bile/3b.png"></li>
-                <li><img src="images/bile/12b.png"></li>
-                <li><img src="images/bile/9b.png"></li>
-                <li><img src="images/bile/1b.png"></li>
-                
-              </ul>
-
-              <div class="divider div-rez center"></div>
-
-              
-                <div class="noroc_container">
-                <img class="noroc_logo" src="images/clover-red.svg">
-                  <div class="noroc_title"> Super Noroc</div>
-                  <div class="noroc_content">456788</div>
-                </div>
-              
-
-            </div>
-          </a> <!--End Rezultates Loto 5/40-->
-
-          <div id="modal1" class="modal"> <!--MODAL Loto 5/40-->
-            <div class="modal-content ">
-              <h4>Loto 5/40</h4>
-              <p>3 5 12 34 23 2</p>
-            </div>
-            <hr>
-            <div class="modal-footer">
-              <a href="#!" class=" modal-action modal-close waves-effect light-blue darken-2 btn-flat">Gata</a>
-            </div>
-          </div>
-
-        </div> <!--END Modal Loto 5/40-->
-
-        <div class="col s12 l4 m6"> <!-- Rezultate Joker-->
-
-           <a class="modal-trigger " href="#modal1"> 
-            <div class="rezultate rezultate-649 ">
-
-              <div class="r-title"> <!--Title Rezultate Joker-->
-                <img class="rezultate_logo" svg" src="images/clover-blue.svg">
-                <h2>Joker</h2>
-              </div>
-
-              <div class="divider div-rez center"></div>
-
-              <ul class="rez-bile"> <!--Numere Rezultate Joker-->
-                <li><img src="images/bile/3b.png"></li>
-                <li><img src="images/bile/3b.png"></li>
-                <li><img src="images/bile/12b.png"></li>
-                <li><img src="images/bile/9b.png"></li>
-                <li><img src="images/bile/1b.png"></li>
-                <li><img src="images/bile/44b.png"></li>
-              </ul>
-
-              <div class="divider div-rez center"></div>
-
-              
-                <div class="noroc_container">
-                <img class="noroc_logo" src="images/clover-red.svg">
-                  <div class="noroc_title">Plus Noroc</div>
-                  <div class="noroc_content">456780</div>
-                </div>
-              
-
-            </div>
-          </a> <!--End Rezultates Joker-->
-
-          <div id="modal1" class="modal"> <!--MODAL Joker-->
-            <div class="modal-content ">
-              <h4>Joker</h4>
-              <p>3 5 12 34 23 2</p>
-            </div>
-            <hr>
-            <div class="modal-footer">
-              <a href="#!" class=" modal-action modal-close waves-effect light-blue darken-2 btn-flat">Gata</a>
-            </div>
-          </div>
-
-        </div> <!--END REZULTATE Joker-->
-
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+    </div> <!-- End Navbar -->
     
-    <br><br>
+    <div class="section"> <!-- Main Section -->
 
-    <div class="section">
+        <div class="row "><!-- Rezultate Section -->
+
+            <div class="main_title_rezultate">
+              <p class="rezultate_main_title">Rezultate Loto</p>
+              <div class="divider div_title center white"></div>
+              <p class="data_rezultate">13/10/1016</p>
+            </div>
+
+
+          <div class="col s12 l4 m6"> <!-- Rezultate Loto 6/49-->
+
+             <a class="modal-trigger " href="#modal649_r"> 
+              <div class="rezultate rezultate-649 ">
+
+                <div class="r-title"> <!--Title Rezultate-->
+                  <img class="rezultate_logo svg" src="images/clover-blue.svg">
+                  <h2>Loto 6/49</h2>
+                </div>
+
+                <div class="divider div-rez center" ></div>
+
+                <ul class="rez-bile" appml-data="loto649"> <!--Numere Rezultate-->
+                  <li appml-repeat="rezultate"><img src="images/bile/{{nr_1}}b.png"></li>
+                  <li appml-repeat="rezultate"><img src="images/bile/{{nr_2}}b.png"></li>
+                  <li appml-repeat="rezultate"><img src="images/bile/{{nr_3}}b.png"></li>
+                  <li appml-repeat="rezultate"><img src="images/bile/{{nr_4}}b.png"></li>
+                  <li appml-repeat="rezultate"><img src="images/bile/{{nr_5}}b.png"></li>
+                  <li appml-repeat="rezultate"><img src="images/bile/{{nr_6}}b.png"></li>
+                </ul>
+
+                <div class="divider div-rez center"></div>
+
+                
+                  <div class="noroc_container">
+                    <img class="noroc_logo" src="images/clover-red.svg">
+                    <div class="noroc_title">Noroc</div>
+                    <div class="noroc_content">4s56788</div>
+                  </div>
+
+
+                </div>
+              </a> 
+
+            <!-- Modal 649 -->
+            <div id="modal649_r" class="modal modal-fixed-footer">
+    
+              <div class="modal-content modal-content-r">
+
+                <div class="modal_top_r">
+                  <img src="images/clover-blue.svg">
+                  <h4 id="title_modal_r">Loto 6/49 - Rezultate</h4>
+                  <div class="divider div-modal-r center"></div>
+                </div>
+
+                <ul class="rez-bile"> 
+                  <li><img src="images/bile/3b.png"></li>
+                  <li><img src="images/bile/3b.png"></li>
+                  <li><img src="images/bile/12b.png"></li>
+                  <li><img src="images/bile/9b.png"></li>
+                  <li><img src="images/bile/1b.png"></li>
+                  <li><img src="images/bile/1b.png"></li>
+                </ul>
+
+              
+                  <div class="castiguri">
+
+                    <ul class="collapsible" data-collapsible="expandable">
+                    <li>
+                    <div class="collapsible-header center">Detalii castiguri la 6/49 din 30.10.2016</div>
+                      
+                    <div class="collapsible-body">
+                    <table class="bordered centered striped">
+                      <thead>
+                       <tr>
+                          <th>CAT.</th>
+                         <th>Numar castiguri</th>
+                         <th>Valoare castig</th>
+                          <th>Report</th>
+                       </tr>
+                      </thead>
+                      <tbody>
+                              <tr>
+                                <td>I (6/6)</td>
+                                <td> REPORT </td>
+                                <td>327.522,60</td>
+                                <td>7.606.743,80</td>
+                              </tr>
+                              <tr>
+                                  <td>II (5/6)</td>
+                                  <td> 8 </td>
+                                  <td>32.882,60</td>
+                                  <td>-</td>
+                              </tr>
+                              <tr>
+                                  <td>III (4/6)</td>
+                                  <td> 633 </td>
+                                  <td>258,70</td>
+                                  <td>-</td>
+                              </tr>
+                              <tr>
+                                <td>IV (3/6)</td>
+                                <td> 11.201 </td>
+                                <td>30,00</td>
+                                <td>-</td>
+                              </tr>
+                            <td colspan="4">Fond total de castiguri: <strong>8.369.595,92</strong></td>
+                          </tr>
+                      </tbody>
+                    </table> <!-- End Loto6/49 Castiguri -->
+                    </div>
+                    </ul>
+                    </li>
+
+                    <br>
+
+                    <div class="noroc_container_modal">
+                      <p class="">Noroc</p>
+                      <div class="noroc_content">456788</div>
+                    </div>
+
+                    <ul class="collapsible" data-collapsible="expandable">
+                    <li>
+                    <div class="collapsible-header center">Detalii castiguri la Noroc din 30.10.2016</div>
+                      
+                    <div class="collapsible-body">
+
+                    <table class="centered striped">
+                      <thead>
+                        <tr>
+                          <th>CAT.</th>
+                          <th>Numarul</th>
+                          <th>Numar castiguri</th>
+                          <th>Valoare castig</th>
+                          <th>Report</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>I</td>
+                          <td>7829907</td>
+                          <td>REPORT</td>
+                          <td>16.759,72</td>
+                          <td>1.147.704,26</td>
+                        </tr>
+                        <tr>
+                          <td>II</td>
+                          <td>829907</td>
+                          <td>REPORT</td>
+                          <td>16.759,72</td>
+                          <td>25.836,90</td>
+                        </tr>
+                        <tr>
+                          <td>III</td>
+                          <td>29907</td>
+                          <td>2</td>
+                          <td>8.379,86</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>IV</td>
+                          <td>9907</td>
+                          <td>15</td>
+                          <td>1.117,31</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>V</td>
+                          <td>907</td>
+                          <td>109</td>
+                          <td>307,51</td>
+                          <td>-</td>
+                        </tr>
+
+                        <tr>
+                          <td>N+3</td>
+                          <td>7829910</td>
+                          <td>REPORT</td>
+                          <td>5.586,57</td>
+                          <td>57.648,58</td>
+                        </tr>
+                        <tr>
+                          <td>N-3</td>
+                            <td>7829904</td>
+                            <td>REPORT</td>
+                            <td>5.586,57</td>
+                            <td>946.852,20</td>
+                        </tr>
+
+                        <tr class="total">
+                          <td colspan="5">Fond total de castiguri: <strong>2.245.080,83</strong></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    </div>
+                    </ul>
+                    </li>
+
+                  </div>
+              </div>
+
+                <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+              </div>
+            </div> 
+            <!-- End Modal 649 -->
+
+          </div> <!--End Rezultates Loto 6/49-->
+
+          <!-- Rezultate Loto 5/40-->
+          <div class="col s12 l4 m6"> 
+
+             <a class="modal-trigger " href="#modal540_r"> 
+              <div class="rezultate rezultate-649 ">
+
+                <div class="r-title"> <!--Title Rezultate-->
+                  <img class="rezultate_logo svg" src="images/clover-blue.svg">
+                  <h2 style="color: #0288d1">Loto 5/40</h2>
+                </div>
+
+                <div class="divider div-rez center"></div>
+
+                <ul class="rez-bile"> <!--Numere Rezultate-->
+                  <li><img src="images/bile/3b.png"></li>
+                  <li><img src="images/bile/3b.png"></li>
+                  <li><img src="images/bile/12b.png"></li>
+                  <li><img src="images/bile/9b.png"></li>
+                  <li><img src="images/bile/1b.png"></li>
+                  <li><img src="images/bile/1b.png"></li>
+                  
+                </ul>
+
+                <div class="divider div-rez center"></div>
+
+                
+                  <div class="noroc_container">
+                  <img class="noroc_logo" src="images/clover-red.svg">
+                    <div class="noroc_title"> Super Noroc</div>
+                    <div class="noroc_content">456788</div>
+                  </div>
+                
+
+              </div>
+            </a> 
+
+            <!-- Modal 540 -->
+            <div id="modal540_r" class="modal modal-fixed-footer">
+              <div class="modal-content">
+                <h4>Loto 5/40 - Rezultate</h4>
+
+
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+              </div>
+            </div>
+
+          </div> <!--End Rezultates Loto 5/40-->
+
+          <div class="col s12 l4 m6"> <!-- Rezultate Joker-->
+
+             <a class="modal-trigger " href="#modaljoker_r"> 
+              <div class="rezultate rezultate-649 ">
+
+                <div class="r-title"> <!--Title Rezultate Joker-->
+                  <img class="rezultate_logo svg" src="images/clover-blue.svg">
+                  <h2>Joker</h2>
+                </div>
+
+                <div class="divider div-rez center"></div>
+
+                <ul class="rez-bile"> <!--Numere Rezultate Joker-->
+                  <li><img src="images/bile/3b.png"></li>
+                  <li><img src="images/bile/3b.png"></li>
+                  <li><img src="images/bile/12b.png"></li>
+                  <li><img src="images/bile/9b.png"></li>
+                  <li><img src="images/bile/1b.png"></li>
+                  <li><img src="images/bile/joker/17.png"></li>
+                </ul>
+
+                <div class="divider div-rez center"></div>
+
+                
+                  <div class="noroc_container">
+                  <img class="noroc_logo" src="images/clover-red.svg">
+                    <div class="noroc_title">Plus Noroc</div>
+                    <div class="noroc_content">456780</div>
+                  </div>
+                
+
+              </div>
+            </a> <!--End Rezultates Joker-->
+
+            <!-- Modal Joker -->
+            <div id="modaljoker_r" class="modal modal-fixed-footer">
+              <div class="modal-content">
+                <h4>Joker - Rezultate</h4>
+                <p>A bunch of text</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+              </div>
+            </div> <!-- End Modal Joker -->
+
+          </div> <!-- End Rezultate Joker-->
+
+      <br><br>
+    </div> <!-- End Main Section -->
 
     </div>
-  </div>
-
-  <footer class="page-footer light-blue darken-2">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
-    <div class="footer-copyright">
+    <footer class="page-footer light-blue darken-2"> <!-- Footer -->
       <div class="container">
-      Made by <a class=" text-lighten-3" href="#">kode.creative</a>
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Company Bio</h5>
+            <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Settings</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Link 1</a></li>
+              <li><a class="white-text" href="#!">Link 2</a></li>
+              <li><a class="white-text" href="#!">Link 3</a></li>
+              <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Link 1</a></li>
+              <li><a class="white-text" href="#!">Link 2</a></li>
+              <li><a class="white-text" href="#!">Link 3</a></li>
+              <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+      <div class="footer-copyright">
+        <div class="container">
+        Made by <a class=" text-lighten-3" href="#">kode.creative</a>
+        </div>
+      </div>
+    </footer> <!--End Footer-->
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="http://www.w3schools.com/appml/2.0.3/appml.js"></script>
+    <script src="js/rezultate.js"></script>
 
+  </div> <!--End of Whole Container-->
 
-
-  </body>
+</body>
 </html>

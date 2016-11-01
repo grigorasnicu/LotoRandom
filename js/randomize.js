@@ -1,15 +1,10 @@
 
 $(document).ready(function(){
-
-    $("#div_m2").hide();
-    $("#div_m3").hide();
-    
- 
     
      $('#loto649_btn').on('click', function () {
 
             $("#div_m2").hide();
-    $("#div_m3").hide();
+            $("#div_m3").hide();
          
              var variante = $("input:radio[name=variante]:checked").val();
              
@@ -20,8 +15,6 @@ $(document).ready(function(){
                     $("#var_3").empty();
                     $("#div_m1").show();
                     $("#var_1").append(randomb("#var_1"));
-                    
-
                   break;
                   
                   case '2' :  
@@ -42,43 +35,24 @@ $(document).ready(function(){
                     break;
              }
              
-           
-          
-         
-          
-  
-        
   });
 });
 
 
-var randomb = function (rand){
+var randomb = function (rand){ //transform random num in img
     
     var randomcheck = [];
-    
      randomcheck = random();
-    
-    
-            
-    
+
     for(var i = 0; i<6; i++){
-            
-          var x = randomcheck[i];  
-       
+          var x = randomcheck[i]; 
           $(rand).append('<li><img class="" src="images/bile/'+x+'b.png"/></li>');
-         
-        }
-        
-    
-    
+        }        
 }
 
 
 
-
 var random = function (){
-
-
 var random6 = [];
 
 random6.push(Math.floor((Math.random()*49)+1));
