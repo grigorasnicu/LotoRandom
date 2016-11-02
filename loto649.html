@@ -14,6 +14,7 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/breakpoints.css">
+  <script src="https://use.fontawesome.com/7c9678371e.js"></script>
 
   <!--FONTS-->
 
@@ -23,12 +24,12 @@
 
 </head>
 
-
 <body>
-    
-  <!-- >>>>>>>>>>>>>>>> NAVBAR <<<<<<<<<<<<<<<<<<< -->
-<div class="main_container">
-  <div class="navbar">
+
+<div class="whole_container">
+
+    <!-- NAVBAR -->
+    <div class="navbar">
     <nav class="light-blue darken-2" role="navigation">
       <div class="nav-wrapper container">
         
@@ -52,14 +53,12 @@
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
-    </div>
+    </div><!--  END NAVBAR -->
 
-    <!-- >>>>>>>>>>>>>>>>>>>> END NAVBAR <<<<<<<<<<<<<<-->
 
-    <!-- >>>>>>>>>>>>>>>>> MAIN SECTION <<<<<<<<<<<<<<<< -->
-
-    <section class="main_section">
-
+    <!-- MAIN SECTION -->
+    <main class="section main_section">
+      <div class="button_zone">
       <div class="row"> <!-- Page Title -->
           <div class="col l12 m12 s12 center container_title_pag">
               <div class="logo_pag_gen"><img src="images/clover.svg"></div>
@@ -90,6 +89,7 @@
                 </p>
              </form>
          </div>
+       </div>
        </div>
 
       <!-- Modal-->
@@ -144,13 +144,11 @@
         </div>
 
       </div> <!--End Modal-->
-  
- </section><!--End Main section-->
+    </main><!--END MAIN SECTION-->
 
-  <!--<<<<<<<<<<<<<<<<<<<< FOOTER >>>>>>>>>>>>>>>>>>>>>-->
-
-  <footer class="page-footer light-blue darken-2">
-    <div class="container">
+    <!-- FOOTER -->
+    <footer class="page-footer light-blue darken-2">
+   <!-- <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Company Bio</h5>
@@ -177,16 +175,17 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div>-->
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="" href="#">kode.creative</a>
+      Made by <a id="kode_creative" href="#">kode.creativ<span >e</span></a>
+      <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Selectează 1, 2 sau 3 variante apoi apasă butonul pentru a genera cele șase numere aleatorii."><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
       </div>
     </div>
-  </footer>
 
-  <!-- >>>>>>>>>>>>>>>>>>>>>> END FOOTER <<<<<<<<<<< -->
+  </footer><!--  END FOOTER -->
 
+</div> <!--End of Whole Container-->
 
   <!--  Scripts -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -194,7 +193,5 @@
   <script src="js/init.js"></script>
   <script src="js/randomize.js"></script>
 
-
-</div>
-  </body>
+</body>
 </html>

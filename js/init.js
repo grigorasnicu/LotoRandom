@@ -27,7 +27,18 @@ $(document).ready(function() {
       onClose: function(el) { alert('Closed'); } // Callback for Collapsible close
     }
   );
+
+  $(document).ready(function(){
+    $('.tooltipped').tooltip({delay: 50});
+  });
+
+
+
+      
 });
 
 //END of MODAL >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
 

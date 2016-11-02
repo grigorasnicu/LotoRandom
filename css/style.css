@@ -8,9 +8,32 @@ Color red > #f44336
 */
 
  /* BODY*/
+ html {
+ 	height: 100%;
+ }
+
 body {
 	background-image: url("kindajean.png");
+	height: 100%;
 }
+
+main.section {
+	flex: 1;
+
+}
+
+div.whole_container {
+	padding: 0;
+	display: flex;
+  	min-height: 100%;
+  	flex-direction: column;	
+  	position: relative;
+}
+
+
+
+
+
 /*End BODY*/
 
 /* NavBar */
@@ -318,6 +341,9 @@ div.castiguri table thead tr th {
 
 /*----------------LOTO PAGE GENERATOR CONTENT -----------------*/
 
+div.button_zone {
+	margin-top: 60px;
+}
 
 
 #loto649_btn {
@@ -426,10 +452,22 @@ div.div_modal div.divider {
 
 /*End Modal*/
 
+i.fa.fa-question-circle-o {
+	font-size: 25px;
+	color:white;
+	position: absolute;
+	right: 10px;
+	margin-top: 12px;
+}
+
 /*END PAGE GENERATOR CONTENT*/
 
 
 /* >>>>>>>>>>> FOOTER <<<<<<<<<<<<*/
+footer.page-footer {
+	padding: 0;
+	margin: 0;
+}
 
 .footer-copyright {
 	font-family:'Poiret One', cursive;
@@ -439,5 +477,11 @@ div.div_modal div.divider {
 
 .footer-copyright a {
 	color: #fff;
+}
+
+a#kode_creative span {
+	-ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(90deg);
 }
 /* >>>>>>>>>>> END FOOTER <<<<<<<<<<<<
