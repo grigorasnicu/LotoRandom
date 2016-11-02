@@ -17,7 +17,7 @@ body {
 	height: 100%;
 }
 
-main.section {
+main.main_section {
 	flex: 1;
 
 }
@@ -30,26 +30,10 @@ div.whole_container {
   	position: relative;
 }
 
-
-
-
-
 /*End BODY*/
 
 /* NavBar */
 
-@media (max-height: 991px){
-.navbar {
-	position: relative;
-	height: 60px;
-	z-index: 998;
-}
-
-.navbar nav {
-	position: fixed;
-}
-
-}
 
 .icon-block {
   padding: 0 15px;
@@ -329,8 +313,16 @@ div.castiguri {
 	margin-left: 5px;
 }
 
-div.castiguri table thead tr th {
-	
+ table.centered tbody tr td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+     line-height: 100%;
+}
+
+table.centered thead tr th {
+	padding-top: 10px;
+	padding-bottom: 10px;
+    line-height: 100%;
 }
 
 

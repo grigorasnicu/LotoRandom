@@ -1,0 +1,11 @@
+/*Max Width 992px*/
+
+.navbar {
+    position: relative;
+    height: 56px;
+    z-index: 998;
+}
+
+.navbar nav {
+    position: fixed;
+}

@@ -4870,13 +4870,9 @@ small {
   left: 0;
   top: 0;
   pointer-events: none;
-
 }
 
-
-
 .backdrop {
-  
   position: absolute;
   opacity: 0;
   display: none;
