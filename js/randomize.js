@@ -1,10 +1,65 @@
+// LOTO RANDOMIZE
+
+// ====== Create an array of random nums ========
+var random = function (variante, total) {
+
+    var numere = [];
+    var x = total;
+    var num = variante;
+    for (i = 1; i <= x; i++) {
+        numere.push(i);
+    }
+
+    var randomNum = [];
+
+    for (j = x; j >= x - num + 1; j--) {
+        y = Math.floor((Math.random() * x + 1));
+        z = numere.indexOf(y);
+        numere.splice(z, 1);
+        randomNum.push(y);
+    }
+
+    return randomNum;
+};
+
+// ============= Transform random num in img =======
+var randomb = function (rand, variante, total){
+
+    var num = variante;
+    var x = total;
+
+    var randomcheck = [];
+    randomcheck = random(num,total);
+
+    for(var i = 0; i<num; i++){
+        var x = randomcheck[i];
+        $(rand).append('<li><img class="" src="images/bile/'+x+'b.png"/></li>');
+    }
+}
+
+// ============= Transform random num in img for JOKER =======
+var randomj = function (rand, variante, total){
+
+    var num = variante;
+    var x = total;
+
+    var randomcheck = [];
+    randomcheck = random(num,total);
+
+        $(rand).append('<li><img class="" src="images/bile/joker/'+randomcheck+'.png"/></li>');
+
+}
+
 
 $(document).ready(function(){
+
+    // Loto 6/40 BUTTON
     
      $('#loto649_btn').on('click', function () {
 
             $("#div_m2").hide();
             $("#div_m3").hide();
+            $("#div_m4").hide();
          
              var variante = $("input:radio[name=variante]:checked").val();
              
@@ -13,42 +68,132 @@ $(document).ready(function(){
                     $("#var_1").empty();
                     $("#var_2").empty();
                     $("#var_3").empty();
+                     $("#var_4").empty();
                     $("#div_m1").show();
-                    $("#var_1").append(randomb("#var_1"));
+                    $("#var_1").append(randomb("#var_1",6,49));
                   break;
                   
                   case '2' :  
                     $("#var_1").empty();
                     $("#var_2").empty();
                     $("#var_3").empty();
-                    $("#div_m2").show();
-                    $("#var_2").append(randomb("#var_1")+randomb("#var_2"));
+                      $("#var_4").empty();
+                      $("#div_m2").show();
+                    $("#var_2").append(randomb("#var_1",6,49)+randomb("#var_2",6,49));
                     break;
                   
                   case '3' :
                     $("#var_1").empty();
                     $("#var_2").empty();
                     $("#var_3").empty();
-                    $("#div_m2").show();
-                    $("#div_m3").show();
-                    $("#var_3").append(randomb("#var_1")+randomb("#var_2")+randomb("#var_3"));
+                      $("#var_4").empty();
+                      $("#div_m2").show();
+                      $("#div_m3").show();
+                    $("#var_3").append(randomb("#var_1",6,49)+randomb("#var_2",6,49)+randomb("#var_3",6,49));
                     break;
+
+                 case '4' :
+                     $("#var_1").empty();
+                     $("#var_2").empty();
+                     $("#var_3").empty();
+                     $("#var_4").empty();
+                     $("#div_m2").show();
+                     $("#div_m3").show();
+                     $("#div_m4").show();
+                     $("#var_4").append(randomb("#var_1")+randomb("#var_2")+randomb("#var_3")+randomb("#var_4"));
+                     break;
              }
              
-  });
+     });
+
+    // LOTO 5/40 BUTTON ===========
+
+    $('#loto540_btn').on('click', function () {
+
+        $("#div_m2").hide();
+        $("#div_m3").hide();
+        $("#div_m4").hide();
+
+        var variante = $("input:radio[name=variante]:checked").val();
+
+        switch (variante){
+            case '1':
+                $("#var_1").empty();
+                $("#var_2").empty();
+                $("#var_3").empty();
+                $("#var_4").empty();
+                $("#div_m1").show();
+                $("#var_1").append(randomb("#var_1",5,40));
+                break;
+
+            case '2' :
+                $("#var_1").empty();
+                $("#var_2").empty();
+                $("#var_3").empty();
+                $("#var_4").empty();
+                $("#div_m2").show();
+                $("#var_2").append(randomb("#var_1",5,40)+randomb("#var_2",5,40));
+                break;
+
+            case '3' :
+                $("#var_1").empty();
+                $("#var_2").empty();
+                $("#var_3").empty();
+                $("#var_4").empty();
+                $("#div_m2").show();
+                $("#div_m3").show();
+                $("#var_3").append(randomb("#var_1",5,40)+randomb("#var_2",5,40)+randomb("#var_3",5,40));
+                break;
+
+            case '4' :
+                $("#var_1").empty();
+                $("#var_2").empty();
+                $("#var_3").empty();
+                $("#var_4").empty();
+                $("#div_m2").show();
+                $("#div_m3").show();
+                $("#div_m4").show();
+                $("#var_4").append(randomb("#var_1",5,40)+randomb("#var_2",5,40)+randomb("#var_3",5,40)+randomb("#var_4",5,40));
+                break;
+        }
+
+    });
+
+    // Joker BUTTON ==========================
+
+    $('#joker_btn').on('click', function () {
+
+        $("#div_m2").hide();
+        $("#div_m3").hide();
+
+
+        var variante = $("input:radio[name=variante]:checked").val();
+
+        switch (variante){
+            case '1':
+                $("#var_1").empty();
+                $("#var_2").empty();
+
+                $("#div_m1").show();
+                $("#var_1").append(randomb("#var_1",5,40)+randomj("#var_1",1,20));
+                break;
+
+            case '2' :
+                $("#var_1").empty();
+                $("#var_2").empty();
+
+                $("#div_m2").show();
+                $("#var_2").append(randomb("#var_1",5,40)+randomj("#var_1",1,20)+randomb("#var_2",5,40)+randomj("#var_2",1,20));
+                break;
+
+
+        }
+
+    });
+
 });
 
-// ============= Transform random num in img =======
-var randomb = function (rand){
-    
-    var randomcheck = [];
-     randomcheck = random();
 
-    for(var i = 0; i<6; i++){
-          var x = randomcheck[i]; 
-          $(rand).append('<li><img class="" src="images/bile/'+x+'b.png"/></li>');
-        }        
-}
 
 
 
@@ -119,27 +264,9 @@ f = Math.floor((Math.random()*49)+1);
      return random6;
 };*/
 
-var random = function () {
 
 
-    var numere = [];
-    x = 49;
-    num = 6;
-    for (i = 1; i <= x; i++) {
-        numere.push(i);
-    }
 
-    var randomNum = [];
-
-    for (j = x; j >= x - num + 1; j--) {
-        y = Math.floor((Math.random() * x + 1));
-        z = numere.indexOf(y);
-        numere.splice(z, 1);
-        randomNum.push(y);
-    }
-
-    return randomNum;
-};
 
 
 

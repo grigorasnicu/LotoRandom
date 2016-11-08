@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <meta name="theme-color" content="#0288d1" />
+
+    <title>LotoRandom - Generator Numere Loto</title>
+    <link rel="shortcut icon" href="images/clover-blue.png" />
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/breakpoint-large.css">
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="css/breakpoint-mobile.css">
+    <script src="https://use.fontawesome.com/7c9678371e.js"></script>
+
+    <!--FONTS-->
+
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monofett" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="whole_container">
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <nav class="light-blue darken-2" role="navigation">
+            <div class="nav-wrapper container">
+
+                <a id="logo-container" href="#" class="brand-logo"><img id="logo-img" src="images/clover.svg">Loto Random</a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="loto649.html">Loto 6/49</a></li>
+                    <li><a href="loto540.html">Loto 5/40</a></li>
+                    <li><a href="joker.html">Joker</a></li>
+                </ul>
+
+                <ul id="nav-mobile" class="side-nav"> <!--Side Nav-->
+                    <img id="" class="center" src="images/clover.svg">
+                    <li class="z-depth-1" ><a href="index.html">Acasa</a></li>
+                    <li class="z-depth-1"><a href="loto649.html">Loto 6/49</a></li>
+                    <li class="z-depth-1 selected_side_nav"><a href="loto540.html">Loto 5/40</a></li>
+                    <li class="z-depth-1"><a href="joker.html">Joker</a></li>
+                </ul><!--End SideNav-->
+
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+    </div><!--  END NAVBAR -->
+
+
+    <!-- MAIN SECTION -->
+    <main class="main_section">
+        <div class="button_zone">
+            <div class="row"> <!-- Page Title -->
+                <div class="col l12 m12 s12 center container_title_pag">
+                    <div class="logo_pag_gen"><img src="images/clover.svg"></div>
+                    <div class="title_pag_gen">5/40</div>
+                </div>
+            </div>
+
+            <div class="row"> <!-- Button -->
+                <div class="col l12 m12 s12 center">
+                    <a class="modal-trigger waves-effect waves-light btn btn-large" id="loto540_btn" href="#modal649">Generează</a>
+                </div>
+            </div>
+
+            <div class="row"> <!--Radio Buttons-->
+                <div class="col l12 m12 s12 center">
+                    <form action="#" class="random_form random_form_540 center">
+                        <p>
+                            <input name="variante" type="radio" id="test1" value="1"  checked />
+                            <label for="test1">1 variantă</label>
+                        </p>
+                        <p>
+                            <input name="variante" type="radio" id="test2" value="2" />
+                            <label for="test2">2 variante</label>
+                        </p>
+                        <p>
+                            <input name="variante" type="radio" id="test3" value="3"  />
+                            <label for="test3">3 variante</label>
+                        </p>
+                        <p>
+                            <input name="variante" type="radio" id="test4" value="4"  />
+                            <label for="test4">4 variante</label>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal-->
+        <div id="modal649" class="modal modal-fixed-footer">
+
+            <div class="modal-content modal_variante_649">
+
+                <div class="modal_top">
+                    <img class="logo_modal_pg" src="images/clover-blue.svg">
+                    <h4 class="title_modal_pg" id="title_modal_pg469">Loto 5/40</h4>
+                </div>
+
+
+                <div class="div_modal" id="div_m1">
+                    <div class="divider"></div>
+                    <p class="right">Varianta 1 </p>
+                </div>
+
+                <div class="row var_rand">
+                    <div class="col l12 m12 s12 center rand_container_1">
+
+                        <ul id="var_1" class="var_content"></ul>
+                    </div>
+                </div>
+
+                <div class="div_modal" id="div_m2">
+                    <div class=" right divider"></div>
+                    <p class="left" id="div_2_title">Varianta 2 </p>
+                </div>
+
+                <div class="row center var_rand">
+                    <div class="col l12 m12 s12 center rand_container_2">
+                        <ul id="var_2" class="var_content"></ul>
+                    </div>
+                </div>
+
+                <div class="div_modal" id="div_m3">
+                    <div class="divider"></div>
+                    <p class="right" id="div_3_title">Varianta 3 </p>
+                </div>
+
+                <div class="row center var_rand">
+                    <div class="col l12 m12 s12 center rand_container_3">
+                        <ul id="var_3" class="var_content"></ul>
+                    </div>
+                </div>
+
+                <div class="div_modal" id="div_m4">
+                    <div class="right divider"></div>
+                    <p class="left" id="div_4_title">Varianta 4 </p>
+                </div>
+
+                <div class="row center var_rand">
+                    <div class="col l12 m12 s12 center rand_container_3">
+                        <ul id="var_4" class="var_content"></ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-blue darken-2 btn-flat ">Gata</a>
+            </div>
+
+        </div> <!--End Modal-->
+    </main><!--END MAIN SECTION-->
+
+    <!-- FOOTER -->
+    <footer class="page-footer light-blue darken-2">
+        <!-- <div class="container">
+           <div class="row">
+             <div class="col l6 s12">
+               <h5 class="white-text">Company Bio</h5>
+               <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+             </div>
+             <div class="col l3 s12">
+               <h5 class="white-text">Settings</h5>
+               <ul>
+                 <li><a class="white-text" href="#!">Link 1</a></li>
+                 <li><a class="white-text" href="#!">Link 2</a></li>
+                 <li><a class="white-text" href="#!">Link 3</a></li>
+                 <li><a class="white-text" href="#!">Link 4</a></li>
+               </ul>
+             </div>
+             <div class="col l3 s12">
+               <h5 class="white-text">Connect</h5>
+               <ul>
+                 <li><a class="white-text" href="#!">Link 1</a></li>
+                 <li><a class="white-text" href="#!">Link 2</a></li>
+                 <li><a class="white-text" href="#!">Link 3</a></li>
+                 <li><a class="white-text" href="#!">Link 4</a></li>
+               </ul>
+             </div>
+           </div>
+         </div>-->
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a id="kode_creative" href="#">kode.creativ<span >e</span></a>
+                <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Selectează 1, 2 sau 3 variante apoi apasă butonul pentru a genera cele șase numere aleatorii."><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+    </footer><!--  END FOOTER -->
+
+</div> <!--End of Whole Container-->
+
+<!--  Scripts -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="js/randomize.js"></script>
+
+</body>
+</html>

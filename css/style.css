@@ -400,7 +400,9 @@ div.title_pag_gen {
 /* Modal */
 
 
-
+form.random_form.random_form_540.center label {
+    padding-left: 21px;
+}
 .modal_top {
 	margin-top: 10px;
 	margin-left: 10px;
