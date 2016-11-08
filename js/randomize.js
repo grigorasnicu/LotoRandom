@@ -38,8 +38,8 @@ $(document).ready(function(){
   });
 });
 
-
-var randomb = function (rand){ //transform random num in img
+// ============= Transform random num in img =======
+var randomb = function (rand){
     
     var randomcheck = [];
      randomcheck = random();
@@ -52,7 +52,7 @@ var randomb = function (rand){ //transform random num in img
 
 
 
-var random = function (){
+/*var random = function (){
 var random6 = [];
 
 random6.push(Math.floor((Math.random()*49)+1));
@@ -117,6 +117,34 @@ f = Math.floor((Math.random()*49)+1);
      };
      
      return random6;
+};*/
+
+var random = function () {
+
+
+    var numere = [];
+    x = 49;
+    num = 6;
+    for (i = 1; i <= x; i++) {
+        numere.push(i);
+    }
+
+    var randomNum = [];
+
+    for (j = x; j >= x - num + 1; j--) {
+        y = Math.floor((Math.random() * x + 1));
+        z = numere.indexOf(y);
+        numere.splice(z, 1);
+        randomNum.push(y);
+    }
+
+    return randomNum;
 };
+
+
+
+
+
+
 
 
