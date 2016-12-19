@@ -3,24 +3,34 @@
 // ====== Create an array of random nums ========
 var random = function (variante, total) {
 
-    var numere = [];
-    var x = total;
-    var num = variante;
-    for (i = 1; i <= x; i++) {
-        numere.push(i);
-    }
+    var variante = variante;
+    var total = total;
 
-    var randomNum = [];
+    var numere = []; // array for generated numbers;
+    var range = []; // array for range;
+    i=0; // initializer
 
-    for (j = x; j >= x - num + 1; j--) {
-        y = Math.floor((Math.random() * x + 1));
-        z = numere.indexOf(y);
-        numere.splice(z, 1);
-        randomNum.push(y);
-    }
+    // **** Generating array range *****
 
-    return randomNum;
+    for (i; i < total; i++) {
+      range.push(i + 1);
+    };
+
+    i=0; // Reinitialize
+    // *** Generating random numbers ***
+
+    while (numere.length < variante) {
+
+        var randomNum = Math.floor(Math.random()* total );
+
+        if (range[randomNum] != -1){
+                numere.push(range[randomNum]);
+                range[randomNum] = -1;
+            };
+    };
+    return numere;
 };
+
 
 // ============= Transform random num in img =======
 var randomb = function (rand, variante, total){
